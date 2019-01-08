@@ -1,27 +1,29 @@
 package main
 
-import "fmt"
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
-func main(){
-    var a [6]int 
-    fmt.Println(a)
+func main() {
+	var a [6]int
+	fmt.Println(a)
 
-    b := [5]int{1,2,3,4,5}
-    fmt.Println(b)
+	b := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(b)
 
-    var twoD [2][3]int 
-    for i:=0;i<2;i++{
-        for j:=0;j<3;j++{
-            twoD[i][j] = i+j
-        }
-    }
+	var twoD [2][3]int
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 3; j++ {
+			twoD[i][j] = i + j
+		}
+	}
 
-    fmt.Println(twoD)
+	fmt.Println(twoD)
 
-    var s [4]string
-    for i:=0;i<4;i++{
-        s[i] = "hello" + strconv.Itoa(i)
-    }
-    fmt.Println(s)
+	var s [4]string
+	for i := 0; i < 4; i++ {
+		s[i] = "hello" + strconv.Itoa(i)
+	}
+	fmt.Println(s)
 }
